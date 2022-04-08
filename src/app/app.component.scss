@@ -1,0 +1,4 @@
+@use "../styles/mixins";
+.title {
+  @include mixins.title;
+}
