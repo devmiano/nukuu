@@ -19,7 +19,6 @@
     .hero {
       .title {
         @include mixins.title;
-        text-align: end;
       }
       .subtitle {
         @include mixins.alt-title;
