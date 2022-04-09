@@ -2,6 +2,36 @@
 @use "../../../styles/mixins";
 
 .form {
+  margin: 1rem 0;
   .form-group {
+    @include mixins.row-between;
+    .name-group,
+    .author-group {
+      margin: 0.5rem 0;
+      .input {
+        @include mixins.input;
+        background-color: base.$tertiary;
+        color: base.$primary;
+        border-bottom: 4px solid base.$primary;
+
+        &::placeholder {
+          color: base.$primary;
+        }
+      }
+    }
+  }
+  .quote-group {
+    margin-top: 1rem;
+    .input {
+      @include mixins.input;
+      width: 100%;
+      background-color: base.$tertiary;
+      color: base.$primary;
+      border-bottom: 4px solid base.$primary;
+
+      &::placeholder {
+        color: base.$primary;
+      }
+    }
   }
 }

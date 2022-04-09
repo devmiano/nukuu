@@ -8,6 +8,9 @@
 
   .left {
     @include mixins.section;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     @include mixins.img-ctr;
     background-image: url("../assets/svg/main.svg");
     width: 40%;

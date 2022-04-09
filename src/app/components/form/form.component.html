@@ -6,6 +6,7 @@
         type="text"
         placeholder="Enter name"
         id="name"
+        name="name"
         autocomplete="off"
         required
       />
@@ -15,14 +16,23 @@
         class="input"
         type="text"
         placeholder="Enter author"
-        id="name"
+        id="author"
+        name="author"
         autocomplete="off"
         required
       />
     </div>
   </div>
   <div class="quote-group">
-    <textarea class="input" required id="quote" name="quote"></textarea>
+    <textarea
+      class="input"
+      placeholder="Enter quote"
+      required
+      id="quote"
+      name="quote"
+      autocomplete="off"
+      required
+    ></textarea>
   </div>
   <app-button text="submit quote"></app-button>
 </form>
