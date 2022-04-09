@@ -27,6 +27,15 @@
         @include mixins.alt-title;
       }
     }
+
+    .form-container {
+      margin-top: 5rem;
+      .subtitle {
+        @include mixins.alt-title;
+        color: base.$primary;
+        font-weight: 600;
+      }
+    }
   }
   .right {
     width: 60%;
