@@ -11,9 +11,10 @@ import { faTrash as fasTrash } from '@fortawesome/free-solid-svg-icons';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './components/button/button.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonComponent],
+  declarations: [AppComponent, ButtonComponent, FormComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
