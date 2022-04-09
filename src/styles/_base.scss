@@ -4,26 +4,46 @@ $font: "Urbanist", sans-serif;
 // Color Palette
 
 // Light
-$light-100: #ecebff;
-$light-200: #b1adff;
-$light-300: #7770ff;
+$light: #b8f9f9;
+$white: #e7fdfd;
 
 // Primary
-$primary: #89fc00;
+$primary: #12eaea;
 
 // Secondary
 $secondary: #6610f2;
+
+// Tertiary
+$tertiary: #5f0fe1;
 
 // Error
 $error: #e4c1f9;
 
 // Accents
-$accent-100: #f4e409;
-$accent-200: #01f4ab;
-$accent-300: #00e8fc;
-$accent-400: #ff74d4;
+$accent-100: #6610f2;
+$accent-200: #e00061;
+$accent-300: #56e39f;
+$accent-400: #12eaea;
+$accent-500: #f5006a;
+$accent-600: #ffd166;
+$accent-700: #ef476f;
+$accent-800: #d8dcff;
+$accent-900: #aeadf0;
 
 // Dark
-$dark-100: #31315e;
-$dark-200: #232343;
-$dark-300: #151528;
+$dark: #202c39;
+$black: #151528;
+
+// Typography
+$type-100: #b8f9f9;
+$type-200: #e7fdfd;
+$type-300: #4a4a8e;
+$type-400: #31315e;
+
+// Gradient
+$gradient-ash: linear-gradient(111.4deg, #f5006a 13.01%, #6610f2 81.12%);
+$gradient-coal: linear-gradient(113.23deg, #4a4a8e 30.01%, #31315e 75.28%);
+$gradient-fire: linear-gradient(114.63deg, #ff7f11 41.82%, #e54f6d 85.03%);
+$gradient-ice: linear-gradient(115.75deg, #56e39f 33.73%, #12eaea 82.99%);
+$gradient-sunset: linear-gradient(111.4deg, #f5006a 13.01%, #6610f2 81.12%);
+$gradient-fruit: linear-gradient(109.33deg, #ffd166 39.8%, #ef476f 91.24%);
