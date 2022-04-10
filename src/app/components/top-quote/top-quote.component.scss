@@ -5,6 +5,9 @@
   @include mixins.row-between;
   @include mixins.img-ctr;
   background-image: url("../../../assets/svg/fire.svg");
+  box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
+  -webkit-box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
+  -moz-box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
   align-items: flex-end;
   padding: 2rem;
   border-radius: 4px;
