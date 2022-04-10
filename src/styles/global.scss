@@ -82,3 +82,21 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: base.$black;
+  margin: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: base.$type-400;
+  border-radius: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: base.$type-300;
+}
