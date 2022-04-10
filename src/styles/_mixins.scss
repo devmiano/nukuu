@@ -58,6 +58,10 @@
 @mixin section {
   height: 91vh;
   padding: 2rem;
+
+  @include for-tab {
+    height: auto;
+  }
 }
 
 // Scroll Container

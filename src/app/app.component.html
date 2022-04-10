@@ -5,9 +5,13 @@
       <h4 class="subtitle">
         Inspire your friends with inspirational and motivational quotes
       </h4>
-      <app-button class="btn-hero" text="get started"></app-button>
+      <app-button
+        class="btn-hero"
+        [text]="btnText"
+        (click)="toggleForm()"
+      ></app-button>
     </div>
-    <div class="form-container">
+    <div *ngIf="showForm" class="form-container">
       <h4 class="subtitle">Share your quote</h4>
       <app-form></app-form>
     </div>

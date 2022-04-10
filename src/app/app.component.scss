@@ -5,6 +5,9 @@
   @include mixins.row-between;
   @include mixins.img-ctr;
   background-image: url("../assets/svg/bg.svg");
+  @include mixins.for-tab {
+    @include mixins.col-between;
+  }
 
   .left {
     @include mixins.section;
@@ -21,9 +24,15 @@
     z-index: 100;
     top: 0;
     right: 0;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
+
+    @include mixins.for-tab {
+      width: 100%;
+      position: relative;
+      z-index: 0;
+    }
     .hero {
-      margin: 2rem 0;
+      margin-top: 2rem;
       .title {
         @include mixins.title;
       }
@@ -36,6 +45,7 @@
     }
 
     .form-container {
+      margin-top: 2rem;
       .subtitle {
         @include mixins.alt-title;
         color: base.$primary;
@@ -47,6 +57,12 @@
     width: 60%;
     height: 91vh;
     padding-left: 2rem;
+
+    @include mixins.for-tab {
+      width: 100%;
+      padding-top: 2rem;
+      padding-left: 0;
+    }
 
     .quotes {
       @include mixins.col-between;

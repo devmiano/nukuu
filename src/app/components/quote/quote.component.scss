@@ -19,6 +19,10 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
 
+    @include mixins.for-tab {
+      width: 60%;
+    }
+
     .title {
       @include mixins.quote-title;
     }
@@ -32,6 +36,10 @@
     width: 30%;
     @include mixins.col-between;
     align-items: flex-end;
+
+    @include mixins.for-tab {
+      width: 40%;
+    }
 
     .cta {
       @include mixins.row-between;
