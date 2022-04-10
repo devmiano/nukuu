@@ -7,6 +7,8 @@ import {
 } from '@fortawesome/angular-fontawesome';
 
 import { faUserCircle as fasUser } from '@fortawesome/free-solid-svg-icons';
+import { faThumbsUp as fasThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import { faThumbsDown as fasThumbsDown } from '@fortawesome/free-solid-svg-icons';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +29,6 @@ import { TopQuoteComponent } from './components/top-quote/top-quote.component';
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(fasUser);
+    library.addIcons(fasUser, fasThumbsUp, fasThumbsDown);
   }
 }

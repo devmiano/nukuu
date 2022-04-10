@@ -6,8 +6,7 @@
     <p class="text">- Hellen Keller -</p>
   </div>
   <div class="right">
-    <div class="details"></div>
-    <div class="cta">
+    <div class="details">
       <div class="top">
         <p class="date">27 APRIL 2022</p>
         <div class="user">
@@ -17,9 +16,11 @@
           <p class="text">Votes</p>
         </div>
       </div>
-      <div class="bottom">
-        <app-button text="details"></app-button>
-      </div>
+    </div>
+    <div class="cta">
+      <fa-icon class="icon" [icon]="['fas', 'thumbs-up']"></fa-icon>
+      <fa-icon class="icon" [icon]="['fas', 'thumbs-down']"></fa-icon>
+      <app-button class="btn-cta" text="details"></app-button>
     </div>
   </div>
 </div>

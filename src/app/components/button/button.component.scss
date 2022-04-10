@@ -4,5 +4,6 @@
 .btn {
   @include mixins.btn;
   background-color: base.$primary;
+  background: base.$gradient-ice;
   color: base.$dark;
 }

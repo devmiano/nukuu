@@ -25,11 +25,14 @@
       }
       .subtitle {
         @include mixins.alt-title;
+        margin-bottom: 2rem;
+      }
+      .btn-hero {
       }
     }
 
     .form-container {
-      margin-top: 5rem;
+      margin-top: 3rem;
       .subtitle {
         @include mixins.alt-title;
         color: base.$primary;

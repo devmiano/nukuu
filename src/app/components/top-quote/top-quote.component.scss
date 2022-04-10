@@ -10,10 +10,10 @@
   border-radius: 4px;
   height: auto;
   .left {
-    width: 60%;
+    width: 70%;
     padding-left: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     .title {
       @include mixins.quote-title;
@@ -25,8 +25,25 @@
   }
 
   .right {
-    width: 40%;
-    @include mixins.row-between;
+    width: 30%;
+    @include mixins.col-between;
     align-items: flex-end;
+
+    .cta {
+      @include mixins.row-between;
+      align-items: center;
+      width: 100%;
+
+      .icon {
+        @include mixins.icon;
+        background-color: base.$light;
+        background: base.$gradient-coal;
+        color: base.$primary;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 0.77rem;
+        padding-left: 0.77rem;
+      }
+    }
   }
 }
