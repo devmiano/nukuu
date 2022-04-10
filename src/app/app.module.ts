@@ -16,6 +16,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { FormComponent } from './components/form/form.component';
 import { TopQuoteComponent } from './components/top-quote/top-quote.component';
 import { TopQuoteDetailsComponent } from './components/top-quote-details/top-quote-details.component';
+import { QuoteComponent } from './components/quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { TopQuoteDetailsComponent } from './components/top-quote-details/top-quo
     FormComponent,
     TopQuoteComponent,
     TopQuoteDetailsComponent,
+    QuoteComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule],
   providers: [],

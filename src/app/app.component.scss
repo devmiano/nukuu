@@ -48,8 +48,9 @@
     height: 91vh;
     overflow-y: auto;
     padding-left: 2rem;
-    .title {
-      @include mixins.title;
+
+    .quotes {
+      @include mixins.row-between;
     }
   }
 }
