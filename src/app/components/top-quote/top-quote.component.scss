@@ -1,0 +1,32 @@
+@use "../../../styles/base";
+@use "../../../styles/mixins";
+
+.top-quote {
+  @include mixins.row-between;
+  @include mixins.img-ctr;
+  background-image: url("../../../assets/svg/fire.svg");
+  align-items: flex-end;
+  padding: 2rem;
+  border-radius: 4px;
+  height: auto;
+  .left {
+    width: 60%;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .title {
+      @include mixins.quote-title;
+    }
+    .text {
+      padding-top: 2rem;
+      @include mixins.quote-text;
+    }
+  }
+
+  .right {
+    width: 40%;
+    @include mixins.row-between;
+    align-items: flex-end;
+  }
+}

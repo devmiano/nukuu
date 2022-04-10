@@ -6,7 +6,7 @@ import {
   FontAwesomeModule,
 } from '@fortawesome/angular-fontawesome';
 
-import { faTrash as fasTrash } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle as fasUser } from '@fortawesome/free-solid-svg-icons';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,13 +15,18 @@ import { FormComponent } from './components/form/form.component';
 import { TopQuoteComponent } from './components/top-quote/top-quote.component';
 
 @NgModule({
-  declarations: [AppComponent, ButtonComponent, FormComponent, TopQuoteComponent],
+  declarations: [
+    AppComponent,
+    ButtonComponent,
+    FormComponent,
+    TopQuoteComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(fasTrash);
+    library.addIcons(fasUser);
   }
 }
