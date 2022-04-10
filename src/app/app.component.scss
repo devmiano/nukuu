@@ -20,6 +20,7 @@
     right: 0;
     border-radius: 0.5rem;
     .hero {
+      margin: 2rem 0;
       .title {
         @include mixins.title;
       }
@@ -32,7 +33,6 @@
     }
 
     .form-container {
-      margin-top: 3rem;
       .subtitle {
         @include mixins.alt-title;
         color: base.$primary;
