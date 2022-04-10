@@ -46,11 +46,11 @@
   .right {
     width: 60%;
     height: 91vh;
-    // overflow-y: auto;
     padding-left: 2rem;
 
     .quotes {
       @include mixins.col-between;
+      padding-bottom: 2rem;
     }
   }
 }

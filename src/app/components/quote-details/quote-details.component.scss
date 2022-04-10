@@ -1,7 +1,7 @@
 @use "../../../styles/base";
 @use "../../../styles/mixins";
 
-.details {
+.quote-details {
   text-align: center;
   padding-right: 1rem;
   .date {
@@ -15,8 +15,8 @@
     .icon {
       @include mixins.icon;
       background-color: base.$light;
-      background: base.$gradient-coal;
-      color: base.$primary;
+      background: base.$gradient-ash;
+      color: base.$dark;
       font-size: 1.3rem;
       padding-top: 0.58rem;
       padding-bottom: 0.58rem;
