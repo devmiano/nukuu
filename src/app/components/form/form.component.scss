@@ -2,8 +2,17 @@
 @use "../../../styles/mixins";
 
 .form {
+  .error {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    color: base.$dark;
+    background-color: base.$error;
+    border-radius: 0.25rem;
+  }
   .form-group {
     @include mixins.row-between;
+
     .name-group,
     .author-group {
       margin: 0.25rem 0;
@@ -16,6 +25,13 @@
         &::placeholder {
           color: base.$primary;
         }
+      }
+      .error {
+        margin: 1rem 0;
+        padding: 0.5rem 1rem;
+        color: base.$dark;
+        background-color: base.$error;
+        border-radius: 0.25rem;
       }
     }
   }

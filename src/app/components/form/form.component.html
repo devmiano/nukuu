@@ -1,4 +1,13 @@
 <form class="form" (ngSubmit)="submitQuote()" #quoteForm="ngForm">
+  <div [hidden]="name.valid || name.pristine" class="error">
+    <p>Name is required</p>
+  </div>
+  <div [hidden]="author.valid || author.pristine" class="error">
+    <p>Author is required</p>
+  </div>
+  <div [hidden]="description.valid || description.pristine" class="error">
+    <p>Name is required</p>
+  </div>
   <div class="form-group">
     <div class="name-group">
       <input

@@ -10,6 +10,7 @@ export class QuoteComponent implements OnInit {
   title = 'Nukuu Quotes';
   btnText: string = 'get started';
   showForm: boolean = false;
+
   quotes: Quote[] = [
     new Quote(
       0,
@@ -52,6 +53,14 @@ export class QuoteComponent implements OnInit {
     quote.id = quoteLength++;
     quote.creationDate = new Date(quote.creationDate);
     this.quotes.push(quote);
+  }
+
+  addLikes(index: number): void {
+    this.quotes[index].showLikes++;
+  }
+
+  addDislikes(index: number): void {
+    this.quotes[index].showDislikes++;
   }
 
   constructor() {}

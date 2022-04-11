@@ -79,7 +79,7 @@
       margin-bottom: 2rem;
 
       .desc {
-        width: 70%;
+        width: 66%;
         padding-left: 2rem;
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -98,7 +98,7 @@
       }
 
       .details {
-        width: 30%;
+        width: 33%;
         @include mixins.col-between;
         align-items: flex-end;
 
@@ -110,6 +110,11 @@
           @include mixins.row-between;
           align-items: center;
           width: 100%;
+
+          .cta-text {
+            color: base.$white;
+            margin-right: 0.25rem;
+          }
 
           .icon {
             @include mixins.icon;

@@ -18,7 +18,10 @@
   </div>
 
   <div class="right">
-    <div class="quote" *ngFor="let quote of quotes; let i = index">
+    <div
+      class="quote"
+      *ngFor="let quote of quotes; let i = index; let c = count"
+    >
       <div class="desc">
         <h2 class="title">{{ quote.description }}</h2>
         <p class="text">- {{ quote.author }} -</p>
@@ -29,9 +32,23 @@
           [quote]="quote"
         ></app-quote-details>
         <div class="cta">
-          <fa-icon class="icon" [icon]="['fas', 'thumbs-up']"></fa-icon>
-          <fa-icon class="icon" [icon]="['fas', 'thumbs-down']"></fa-icon>
-          <app-button class="btn-cta" text="details"></app-button>
+          <p class="cta-text">{{ quote.showLikes }}</p>
+          <fa-icon
+            (click)="addLikes(i)"
+            class="icon"
+            [icon]="['fas', 'thumbs-up']"
+          ></fa-icon>
+          <p class="cta-text">{{ quote.showDislikes }}</p>
+          <fa-icon
+            class="icon"
+            (click)="addDislikes(i)"
+            [icon]="['fas', 'thumbs-down']"
+          ></fa-icon>
+          <app-button
+            class="btn-cta"
+            (click)="toggleDetails(i)"
+            text="details"
+          ></app-button>
         </div>
       </div>
     </div>

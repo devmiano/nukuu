@@ -182,14 +182,14 @@
 @mixin quote-title {
   color: base.$light;
   font-size: 1.77rem;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: 0.05rem;
 }
 
 @mixin quote-text {
   color: base.$black;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
