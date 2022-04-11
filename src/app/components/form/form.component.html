@@ -1,12 +1,24 @@
 <form class="form" (ngSubmit)="submitQuote()" #quoteForm="ngForm">
-  <div [hidden]="name.valid || name.pristine" class="error">
-    <p>Name is required</p>
+  <div *ngIf="name.invalid && (name.dirty || name.touched)" class="error">
+    <p *ngIf="name.errors?.['required']">name is required</p>
+    <p *ngIf="name.errors?.['minlength']">
+      name must be at least 4 characters long
+    </p>
   </div>
-  <div [hidden]="author.valid || author.pristine" class="error">
-    <p>Author is required</p>
+  <div *ngIf="author.invalid && (author.dirty || author.touched)" class="error">
+    <p *ngIf="author.errors?.['required']">author is required</p>
+    <p *ngIf="author.errors?.['minlength']">
+      author must be at least 4 characters long
+    </p>
   </div>
-  <div [hidden]="description.valid || description.pristine" class="error">
-    <p>Name is required</p>
+  <div
+    *ngIf="description.invalid && (description.dirty || description.touched)"
+    class="error"
+  >
+    <p *ngIf="description.errors?.['required']">description is required</p>
+    <p *ngIf="description.errors?.['minlength']">
+      description must be at least 8 characters long
+    </p>
   </div>
   <div class="form-group">
     <div class="name-group">
@@ -18,6 +30,7 @@
         name="name"
         [(ngModel)]="newQuote.name"
         #name="ngModel"
+        minlength="4"
         autocomplete="off"
         required
       />
@@ -31,6 +44,7 @@
         name="author"
         [(ngModel)]="newQuote.author"
         #author="ngModel"
+        minlength="4"
         autocomplete="off"
         required
       />
@@ -40,14 +54,15 @@
     <textarea
       class="input"
       placeholder="Enter quote"
-      required
       id="description"
       name="description"
       [(ngModel)]="newQuote.description"
       #description="ngModel"
+      minlength="8"
       autocomplete="off"
       required
     ></textarea>
   </div>
   <app-button text="submit quote"></app-button>
 </form>
+<!-- [text]="submitText" (click)="toggleSubmit()" -->

@@ -12,16 +12,16 @@
       ></app-button>
       <div *ngIf="showForm" class="form-container">
         <h4 class="subtext">Share your quote</h4>
-        <app-form (addQuote)="addNewQuote($event)"></app-form>
+        <app-form
+          (addQuote)="toggleForm()"
+          (addQuote)="addNewQuote($event)"
+        ></app-form>
       </div>
     </div>
   </div>
 
   <div class="right">
-    <div
-      class="quote"
-      *ngFor="let quote of quotes; let i = index; let c = count"
-    >
+    <div class="quote" *ngFor="let quote of quotes; let i = index">
       <div class="desc">
         <h2 class="title">{{ quote.description }}</h2>
         <p class="text">- {{ quote.author }} -</p>

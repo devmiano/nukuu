@@ -48,7 +48,7 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }
 
-  addNewQuote(quote: Quote) {
+  addNewQuote(quote: Quote): void {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength++;
     quote.creationDate = new Date(quote.creationDate);
