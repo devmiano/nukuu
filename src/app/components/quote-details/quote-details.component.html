@@ -4,11 +4,16 @@
     (click)="quoteDelete(true)"
     [icon]="['fas', 'trash']"
   ></fa-icon>
-  <p class="date">{{ quote.creationDate | datePipe }} days ago</p>
+  <p class="date">
+    published on <br />
+    {{ quote.creationDate | date }}
+  </p>
   <div class="user">
     <fa-icon class="icon" [icon]="['fas', 'user-circle']"></fa-icon>
     <p class="name">{{ quote.name }}</p>
-    <p class="votes">24</p>
-    <p class="text">Votes</p>
+    <p class="date">
+      published <br />
+      {{ quote.creationDate | datePipe }} days ago
+    </p>
   </div>
 </div>

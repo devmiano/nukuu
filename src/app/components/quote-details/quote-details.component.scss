@@ -3,7 +3,7 @@
 
 .quote-details {
   text-align: center;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
 
   .delete {
     @include mixins.icon;
@@ -30,11 +30,11 @@
       background-color: base.$light;
       background: base.$gradient-ash;
       color: base.$dark;
-      font-size: 1.3rem;
-      padding-top: 0.68rem;
-      padding-bottom: 0.58rem;
-      padding-right: 0.8rem;
-      padding-left: 0.8rem;
+      font-size: 1.5rem;
+      padding-top: 0.48rem;
+      padding-bottom: 0.38rem;
+      padding-right: 0.63rem;
+      padding-left: 0.63rem;
     }
     .name {
       margin-top: 0.5rem;
