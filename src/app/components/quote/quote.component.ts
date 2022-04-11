@@ -7,6 +7,9 @@ import { Quote } from '../../classes/quote';
   styleUrls: ['./quote.component.scss'],
 })
 export class QuoteComponent implements OnInit {
+  title = 'Nukuu Quotes';
+  btnText: string = 'get started';
+  showForm: boolean = false;
   quotes: Quote[] = [
     new Quote(
       0,
@@ -30,10 +33,20 @@ export class QuoteComponent implements OnInit {
       new Date()
     ),
   ];
+  toggleForm() {
+    this.showForm = !this.showForm;
+
+    if (this.showForm) {
+      this.btnText = 'close';
+    } else {
+      this.btnText = 'get started';
+    }
+  }
 
   toggleDetails(index: number): void {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }
+
   addNewQuote(quote: Quote) {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength++;

@@ -1,60 +1,127 @@
 @use "../../../styles/base";
 @use "../../../styles/mixins";
 
-.quote {
+.app {
+  @include mixins.app;
   @include mixins.row-between;
   @include mixins.img-ctr;
-  background-image: url("../../../assets/svg/space.svg");
-  box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
-  -webkit-box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
-  -moz-box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
-  align-items: flex-end;
-  padding: 2rem;
-  border-radius: 4px;
-  height: auto;
-  margin-top: 2rem;
-  .left {
-    width: 70%;
-    padding-left: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-
-    @include mixins.for-tab {
-      width: 60%;
-    }
-
-    .title {
-      @include mixins.quote-title;
-    }
-    .text {
-      padding-top: 2rem;
-      @include mixins.quote-text;
-    }
+  background-image: url("../../../assets/svg/bg.svg");
+  @include mixins.for-tab {
+    @include mixins.col-between;
   }
 
-  .right {
-    width: 30%;
-    @include mixins.col-between;
-    align-items: flex-end;
+  .left {
+    @include mixins.section;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @include mixins.img-ctr;
+    background-image: url("../../../assets/svg/main.svg");
+    box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
+    -webkit-box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
+    -moz-box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
+    width: 40%;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    border-radius: 0.25rem;
 
     @include mixins.for-tab {
-      width: 40%;
+      width: 100%;
+      position: relative;
+      z-index: 0;
+    }
+    .hero {
+      margin-top: 2rem;
+      .title {
+        @include mixins.title;
+      }
+      .subtitle {
+        @include mixins.alt-title;
+        margin-bottom: 3rem;
+      }
+      .btn-hero {
+      }
     }
 
-    .cta {
-      @include mixins.row-between;
-      align-items: center;
-      width: 100%;
+    .form-container {
+      margin-top: 3rem;
+      .subtext {
+        @include mixins.alt-title;
+        color: base.$primary;
+        font-weight: 600;
+      }
+    }
+  }
+  .right {
+    width: 60%;
+    height: 91vh;
+    padding-left: 2rem;
 
-      .icon {
-        @include mixins.icon;
-        background-color: base.$black;
-        background: base.$gradient-ash;
-        color: base.$black;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding-right: 0.77rem;
-        padding-left: 0.77rem;
+    @include mixins.for-tab {
+      width: 100%;
+      padding-top: 2rem;
+      padding-left: 0;
+      padding-bottom: 2rem;
+    }
+    .quote {
+      @include mixins.row-between;
+      @include mixins.img-ctr;
+      background-image: url("../../../assets/svg/space.svg");
+      box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
+      -webkit-box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
+      -moz-box-shadow: 0px 0px 22px 13px rgba(31, 31, 38, 0.49);
+      align-items: flex-end;
+      padding: 2rem;
+      border-radius: 4px;
+      height: auto;
+      margin-bottom: 2rem;
+
+      .desc {
+        width: 70%;
+        padding-left: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        @include mixins.for-tab {
+          width: 60%;
+        }
+
+        .title {
+          @include mixins.quote-title;
+        }
+        .text {
+          padding-top: 2rem;
+          @include mixins.quote-text;
+        }
+      }
+
+      .details {
+        width: 30%;
+        @include mixins.col-between;
+        align-items: flex-end;
+
+        @include mixins.for-tab {
+          width: 40%;
+        }
+
+        .cta {
+          @include mixins.row-between;
+          align-items: center;
+          width: 100%;
+
+          .icon {
+            @include mixins.icon;
+            background-color: base.$black;
+            background: base.$gradient-ash;
+            color: base.$black;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-right: 0.77rem;
+            padding-left: 0.77rem;
+          }
+        }
       }
     }
   }

@@ -6,7 +6,7 @@
     @include mixins.row-between;
     .name-group,
     .author-group {
-      margin: 0.5rem 0;
+      margin: 0.25rem 0;
       .input {
         @include mixins.input;
         background-color: base.$tertiary;
@@ -27,6 +27,7 @@
       background-color: base.$tertiary;
       color: base.$primary;
       border-bottom: 4px solid base.$primary;
+      margin-bottom: 1rem;
 
       &::placeholder {
         color: base.$primary;

@@ -1,17 +1,39 @@
-<div class="quote" *ngFor="let quote of quotes; let i = index">
+<div class="app">
   <div class="left">
-    <h2 class="title">{{ quote.description }}</h2>
-    <p class="text">- {{ quote.author }} -</p>
+    <div class="hero">
+      <h1 class="title">{{ title }}</h1>
+      <h4 class="subtitle">
+        Inspire your friends with inspirational and motivational quotes
+      </h4>
+      <app-button
+        class="btn-hero"
+        [text]="btnText"
+        (click)="toggleForm()"
+      ></app-button>
+      <div *ngIf="showForm" class="form-container">
+        <h4 class="subtext">Share your quote</h4>
+        <app-form (addQuote)="addNewQuote($event)"></app-form>
+      </div>
+    </div>
   </div>
+
   <div class="right">
-    <app-quote-details
-      *ngIf="quote.showDetails"
-      [quote]="quote"
-    ></app-quote-details>
-    <div class="cta">
-      <fa-icon class="icon" [icon]="['fas', 'thumbs-up']"></fa-icon>
-      <fa-icon class="icon" [icon]="['fas', 'thumbs-down']"></fa-icon>
-      <app-button class="btn-cta" text="details"></app-button>
+    <div class="quote" *ngFor="let quote of quotes; let i = index">
+      <div class="desc">
+        <h2 class="title">{{ quote.description }}</h2>
+        <p class="text">- {{ quote.author }} -</p>
+      </div>
+      <div class="details">
+        <app-quote-details
+          *ngIf="quote.showDetails"
+          [quote]="quote"
+        ></app-quote-details>
+        <div class="cta">
+          <fa-icon class="icon" [icon]="['fas', 'thumbs-up']"></fa-icon>
+          <fa-icon class="icon" [icon]="['fas', 'thumbs-down']"></fa-icon>
+          <app-button class="btn-cta" text="details"></app-button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
