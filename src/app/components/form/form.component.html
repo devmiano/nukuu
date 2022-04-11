@@ -1,4 +1,4 @@
-<form class="form">
+<form class="form" (ngSubmit)="submitQuote()" #quoteForm="ngForm">
   <div class="form-group">
     <div class="name-group">
       <input
@@ -7,6 +7,8 @@
         placeholder="Enter name"
         id="name"
         name="name"
+        [(ngModel)]="newQuote.name"
+        #name="ngModel"
         autocomplete="off"
         required
       />
@@ -18,6 +20,8 @@
         placeholder="Enter author"
         id="author"
         name="author"
+        [(ngModel)]="newQuote.author"
+        #author="ngModel"
         autocomplete="off"
         required
       />
@@ -28,11 +32,23 @@
       class="input"
       placeholder="Enter quote"
       required
-      id="quote"
-      name="quote"
+      id="description"
+      name="description"
+      [(ngModel)]="newQuote.description"
+      #description="ngModel"
       autocomplete="off"
       required
     ></textarea>
+    <input
+      class="input"
+      type="date"
+      id="creationDate"
+      name="creationDate"
+      [(ngModel)]="newQuote.creationDate"
+      #creationDate="ngModel"
+      autocomplete="off"
+      required
+    />
   </div>
   <app-button text="submit quote"></app-button>
 </form>
