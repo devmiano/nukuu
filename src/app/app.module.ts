@@ -7,6 +7,7 @@ import {
 } from '@fortawesome/angular-fontawesome';
 
 import { faUserCircle as fasUser } from '@fortawesome/free-solid-svg-icons';
+import { faTrash as fasTrash } from '@fortawesome/free-solid-svg-icons';
 import { faThumbsUp as fasThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import { faThumbsDown as fasThumbsDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -37,6 +38,6 @@ import { DatePipe } from './pipes/date.pipe';
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(fasUser, fasThumbsUp, fasThumbsDown);
+    library.addIcons(fasUser, fasThumbsUp, fasThumbsDown, fasTrash);
   }
 }

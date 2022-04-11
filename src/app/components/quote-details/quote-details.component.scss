@@ -4,12 +4,24 @@
 .quote-details {
   text-align: center;
   padding-right: 1rem;
+
+  .delete {
+    @include mixins.icon;
+    background-color: base.$accent-700;
+    color: base.$light;
+    padding-top: 0.58rem;
+    padding-bottom: 0.58rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
   .date {
     color: base.$white;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 300;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
+    margin: 1rem 0;
   }
   .user {
     margin: 1rem 0;
@@ -19,16 +31,16 @@
       background: base.$gradient-ash;
       color: base.$dark;
       font-size: 1.3rem;
-      padding-top: 0.58rem;
+      padding-top: 0.68rem;
       padding-bottom: 0.58rem;
-      padding-right: 0.7rem;
-      padding-left: 0.7rem;
+      padding-right: 0.8rem;
+      padding-left: 0.8rem;
     }
     .name {
       margin-top: 0.5rem;
       color: base.$white;
       font-size: 0.8rem;
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 0.15rem;
       text-transform: uppercase;
     }
@@ -40,7 +52,7 @@
     .text {
       color: base.$white;
       font-size: 0.8rem;
-      font-weight: 600;
+      font-weight: 400;
       text-transform: uppercase;
     }
   }

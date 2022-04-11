@@ -30,6 +30,7 @@
         <app-quote-details
           *ngIf="quote.showDetails"
           [quote]="quote"
+          (isDelete)="deleteQuote($event, i)"
         ></app-quote-details>
         <div class="cta">
           <p class="cta-text">{{ quote.showLikes }}</p>

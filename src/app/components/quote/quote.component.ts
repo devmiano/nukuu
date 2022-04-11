@@ -48,6 +48,12 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }
 
+  deleteQuote(isDelete: any, index: number): void {
+    if (isDelete) {
+      this.quotes.splice(index, 1);
+    }
+  }
+
   addNewQuote(quote: Quote): void {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength++;
