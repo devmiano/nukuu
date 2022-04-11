@@ -1,10 +1,13 @@
-<div class="quote">
+<div class="quote" *ngFor="let quote of quotes; let i = index">
   <div class="left">
-    <h2 class="title">Enjoy life. There's plenty of time to be dead.</h2>
-    <p class="text">- Hans Christian Andersen -</p>
+    <h2 class="title">{{ quote.description }}</h2>
+    <p class="text">- {{ quote.author }} -</p>
   </div>
   <div class="right">
-    <app-quote-details></app-quote-details>
+    <app-quote-details
+      *ngIf="quote.showDetails"
+      [quote]="quote"
+    ></app-quote-details>
     <div class="cta">
       <fa-icon class="icon" [icon]="['fas', 'thumbs-up']"></fa-icon>
       <fa-icon class="icon" [icon]="['fas', 'thumbs-down']"></fa-icon>
