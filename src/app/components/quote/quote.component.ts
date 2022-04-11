@@ -14,24 +14,24 @@ export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(
       0,
-      'Sammy Muchiri',
+      'Sammy',
       'Arthur Schopenhauer',
       'Talent hits a target no one else can hit, Genius hits a target no one else can see.',
-      new Date()
+      new Date(2022, 3, 9)
     ),
     new Quote(
       1,
-      'Jane Ngoiri',
+      'Jane',
       'Hellen Keller',
       'Be happy with what you have, while working for what you want.',
-      new Date()
+      new Date(2022, 3, 7)
     ),
     new Quote(
       2,
-      'Christian Milan',
+      'Milan',
       'Hans Christian Andersen',
       'Enjoy life. Theres plenty of time to be dead.',
-      new Date()
+      new Date(2022, 3, 1)
     ),
   ];
   toggleForm() {

@@ -18,6 +18,7 @@ import { TopQuoteComponent } from './components/top-quote/top-quote.component';
 import { TopQuoteDetailsComponent } from './components/top-quote-details/top-quote-details.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { QuoteDetailsComponent } from './components/quote-details/quote-details.component';
+import { DatePipe } from './pipes/date.pipe';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { QuoteDetailsComponent } from './components/quote-details/quote-details.
     TopQuoteDetailsComponent,
     QuoteComponent,
     QuoteDetailsComponent,
+    DatePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule],
   providers: [],

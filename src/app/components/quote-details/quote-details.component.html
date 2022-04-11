@@ -1,5 +1,5 @@
 <div class="quote-details">
-  <p class="date">{{ quote.creationDate }}</p>
+  <p class="date">{{ quote.creationDate | datePipe }} days ago</p>
   <div class="user">
     <fa-icon class="icon" [icon]="['fas', 'user-circle']"></fa-icon>
     <p class="name">{{ quote.name }}</p>
