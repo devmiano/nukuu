@@ -1,5 +1,7 @@
 # Nukuu | Angular web app to share quotes from your favorite author.
 
+'Nukuu' is a swahili word that means to quote something or someone.
+
 ## Author
 
 :link: [Sammy Muchiri](https://github.com/devmiano)
@@ -12,9 +14,9 @@
 
 :point_right: Open Terminal {Ctrl+Alt+T}
 
-`git clone https://github.com/devmiano/pizzark.git`
+`git clone https://github.com/devmiano/nukuu.git`
 
-- `cd pizzark` to enter the project folder
+- `cd nukuu` to enter the project folder
 
 - `code .` or `atom .` based on the text editor you have.
 
