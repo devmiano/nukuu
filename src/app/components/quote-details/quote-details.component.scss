@@ -7,18 +7,18 @@
 
   .delete {
     @include mixins.icon;
-    background-color: base.$accent-700;
-    color: base.$light;
-    padding-top: 0.58rem;
-    padding-bottom: 0.58rem;
+    background-color: base.$black;
+    color: base.$error;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
     padding-right: 0.8rem;
     padding-left: 0.8rem;
   }
 
   .date {
     color: base.$white;
-    font-size: 0.6rem;
-    font-weight: 300;
+    font-size: 0.8rem;
+    font-weight: 400;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     margin: 1rem 0;
@@ -40,8 +40,8 @@
       margin-top: 0.5rem;
       color: base.$white;
       font-size: 0.8rem;
-      font-weight: 400;
-      letter-spacing: 0.15rem;
+      font-weight: 600;
+      letter-spacing: 0.05rem;
       text-transform: uppercase;
     }
     .votes {
@@ -52,7 +52,7 @@
     .text {
       color: base.$white;
       font-size: 0.8rem;
-      font-weight: 400;
+      font-weight: 500;
       text-transform: uppercase;
     }
   }

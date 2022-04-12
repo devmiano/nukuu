@@ -1,0 +1,23 @@
+<svg width="339" height="214" viewBox="0 0 339 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect id="fruit" width="339" height="214" fill="url(#paint0_linear_10_5)"/>
+<defs>
+<linearGradient id="paint0_linear_10_5" x1="34" y1="34" x2="304" y2="186" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF621F"/>
+<stop offset="0.0106211" stop-color="#FF6022"/>
+<stop offset="0.0273862" stop-color="#FE5E24"/>
+<stop offset="0.0507253" stop-color="#FE5C26"/>
+<stop offset="0.081068" stop-color="#FD5A28"/>
+<stop offset="0.118844" stop-color="#FD582B"/>
+<stop offset="0.164484" stop-color="#FC552E"/>
+<stop offset="0.218416" stop-color="#FC5232"/>
+<stop offset="0.281071" stop-color="#FB4E37"/>
+<stop offset="0.352879" stop-color="#FA493D"/>
+<stop offset="0.434269" stop-color="#F84245"/>
+<stop offset="0.525672" stop-color="#F73A4F"/>
+<stop offset="0.627517" stop-color="#F5305B"/>
+<stop offset="0.740233" stop-color="#F22469"/>
+<stop offset="0.864251" stop-color="#EF167A"/>
+<stop offset="1" stop-color="#EC058E"/>
+</linearGradient>
+</defs>
+</svg>

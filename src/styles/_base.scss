@@ -44,6 +44,26 @@ $type-400: #31315e;
 $gradient-ash: linear-gradient(111.4deg, #d8dcff 13.01%, #aeadf0 81.12%);
 $gradient-coal: linear-gradient(113.23deg, #4a4a8e 30.01%, #31315e 75.28%);
 $gradient-fire: linear-gradient(114.63deg, #ff7f11 41.82%, #e54f6d 85.03%);
-$gradient-ice: linear-gradient(115.75deg, #56e39f 33.73%, #12eaea 82.99%);
+$gradient-ice: linear-gradient(180deg, #2cf6b3 0%, #12eaea 100%);
 $gradient-sunset: linear-gradient(111.4deg, #f5006a 13.01%, #6610f2 81.12%);
 $gradient-fruit: linear-gradient(109.33deg, #ffd166 39.8%, #ef476f 91.24%);
+$gradient-inspire: linear-gradient(
+  109.56deg,
+  #ff621f 11.57%,
+  #ff6022 12.39%,
+  #fe5e24 13.68%,
+  #fe5c26 15.49%,
+  #fd5a28 17.84%,
+  #fd582b 20.76%,
+  #fc552e 24.29%,
+  #fc5232 28.47%,
+  #fb4e37 33.32%,
+  #fa493d 38.87%,
+  #f84245 45.17%,
+  #f73a4f 52.25%,
+  #f5305b 60.13%,
+  #f22469 68.85%,
+  #ef167a 78.45%,
+  #ec058e 88.95%
+);
+$gradient-spring: linear-gradient(180deg, #2cf6b3 0%, #12eaea 100%);
