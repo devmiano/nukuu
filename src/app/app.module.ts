@@ -20,6 +20,7 @@ import { TopQuoteDetailsComponent } from './components/top-quote-details/top-quo
 import { QuoteComponent } from './components/quote/quote.component';
 import { QuoteDetailsComponent } from './components/quote-details/quote-details.component';
 import { DatePipe } from './pipes/date.pipe';
+import { BackgroundDirective } from './directives/background.directive';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { DatePipe } from './pipes/date.pipe';
     QuoteComponent,
     QuoteDetailsComponent,
     DatePipe,
+    BackgroundDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule],
   providers: [],

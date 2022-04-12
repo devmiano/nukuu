@@ -48,6 +48,12 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }
 
+  get sortList() {
+    return this.quotes.sort((high, low) => {
+      return <any>new Date(low.creationDate) - <any>new Date(high.creationDate);
+    });
+  }
+
   deleteQuote(isDelete: any, index: number): void {
     if (isDelete) {
       this.quotes.splice(index, 1);
