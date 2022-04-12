@@ -21,14 +21,10 @@
   </div>
 
   <div class="right">
-    <div
-      class="quote"
-      appBackground
-      *ngFor="let quote of sortList; let i = index"
-    >
+    <div class="quote" *ngFor="let quote of sortList; let i = index">
       <div class="desc">
         <h2 class="title">{{ quote.description }}</h2>
-        <p class="text">- {{ quote.author }} -</p>
+        <p appBackground class="text">- {{ quote.author }} -</p>
       </div>
       <div class="details">
         <app-quote-details
@@ -40,6 +36,7 @@
           <p class="cta-text">{{ quote.showLikes }}</p>
           <fa-icon
             (click)="addLikes(i)"
+            appBackground
             class="icon"
             [icon]="['fas', 'thumbs-up']"
           ></fa-icon>

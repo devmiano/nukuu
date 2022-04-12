@@ -75,6 +75,21 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDislikes++;
   }
 
+  get sortLikes() {
+    return this.quotes.sort((high, low) => {
+      return <any>low.showLikes - <any>high.showLikes;
+    });
+  }
+
+  topLikes() {
+    Math.max.apply(
+      Math,
+      this.quotes.map(function (o) {
+        return o.showLikes;
+      })
+    );
+  }
+
   constructor() {}
 
   ngOnInit(): void {}
